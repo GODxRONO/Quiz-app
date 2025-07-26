@@ -1,0 +1,135 @@
+/* Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Option Styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #eee;
+  padding: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+ul li:hover {
+  background: #ddd;
+  transform: scale(1.02);
+}
+
+/* Feedback Styles */
+.correct {
+  background-color: #c8e6c9 !important;
+  color: green;
+  font-weight: bold;
+}
+
+.wrong {
+  background-color: #ffcdd2 !important;
+  color: red;
+  font-weight: bold;
+}
+
+/* Timer Styling */
+#timer {
+  font-size: 20px;
+  margin: 10px;
+  color: #444;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark-mode ul li {
+  background: #333;
+  color: #eee;
+}
+
+.dark-mode ul li:hover {
+  background: #444;
+}
+
+/* Question Fade-in Transition */
+#question-box {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#question-box.fade-in {
+  opacity: 1;
+}
+
+/* Final Score Styling */
+#score {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#percentage {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Congratulation Text */
+#congrats {
+  font-size: 26px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  input, select, button {
+    width: 100%;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+}
